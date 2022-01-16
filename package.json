@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Brandonpena97/Team-Profile-Generator/issues"
   },
-  "homepage": "https://github.com/Brandonpena97/Team-Profile-Generator#readme"
+  "homepage": "https://github.com/Brandonpena97/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
 }
