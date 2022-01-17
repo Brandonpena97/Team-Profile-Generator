@@ -35,8 +35,8 @@ function createManager() {
             const newManager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
 
             employeeArray.push(newManager)
+            
             promptAction()
-
         })
 }
 

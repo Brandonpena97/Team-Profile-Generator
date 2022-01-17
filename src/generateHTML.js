@@ -19,6 +19,16 @@ const htmlTemplate = (employeeArray) => {
             <li class="list-group-item"> ${employeeArray[0].officeNumber}</li>
         </ul>
     </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            ${employeeArray[1].name}
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"> ${employeeArray[1].id}</li>
+            <li class="list-group-item"> ${employeeArray[1].email}</li>
+            <li class="list-group-item"> ${employeeArray[1].github}</li>
+        </ul>
+    </div>
 </body>
 </html>`
 }
