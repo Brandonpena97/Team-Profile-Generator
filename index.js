@@ -35,7 +35,7 @@ function createManager() {
             const newManager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
 
             employeeArray.push(newManager)
-            
+
             promptAction()
         })
 }
@@ -64,13 +64,13 @@ function createEngineer() {
             message: "what is this engineer Github username?"
         }
     ])
-    .then((answers) => {
-        const newEngineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);
+        .then((answers) => {
+            const newEngineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);
 
-        employeeArray.push(newEngineer)
-        promptAction()
+            employeeArray.push(newEngineer)
+            promptAction()
 
-    })
+        })
 }
 
 function createIntern() {
@@ -96,13 +96,13 @@ function createIntern() {
             message: "What school did this Intern go to?"
         }
     ])
-    .then((answers) => {
-        const newIntern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
+        .then((answers) => {
+            const newIntern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
 
-        employeeArray.push(newIntern)
-        promptAction()
+            employeeArray.push(newIntern)
+            promptAction()
 
-    })
+        })
 }
 
 function promptAction() {
@@ -113,7 +113,7 @@ function promptAction() {
         choices: [
             "Add new Engineer",
             "Add new Intern",
-            "Finish building team and generate HTML."
+            "Finished building team and generate HTML."
         ]
     }])
         .then((answer) => {
@@ -122,17 +122,12 @@ function promptAction() {
             } else if (answer.action == "Add new Intern") {
                 createIntern();
             } else if (answer.action == "Finish building team and generate HTML.") {
-
-                // call your end function that will generate the HTML
                 endFunction();
             }
         })
-} 
+}
 
-
-
-
-
+createManager();
 
 
 const endFunction = () => {
@@ -142,5 +137,5 @@ const endFunction = () => {
         console.log("HTML created!")
     })
 
-}
+};
 
