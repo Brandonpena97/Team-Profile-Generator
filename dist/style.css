@@ -1,0 +1,14 @@
+.myTeam {
+    font-size:3rem;
+    background-color: red;
+    color: white; 
+    text-align: center;
+
+}
+
+.employeeBoxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

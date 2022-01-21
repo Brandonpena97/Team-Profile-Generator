@@ -121,7 +121,7 @@ function promptAction() {
                 createEngineer();
             } else if (answer.action == "Add new Intern") {
                 createIntern();
-            } else if (answer.action == "Finish building team and generate HTML.") {
+            } else if (answer.action == "Finished building team and generate HTML.") {
                 endFunction();
             }
         })
